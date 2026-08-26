@@ -1,0 +1,105 @@
+    1  mkdir -p ~/Documentos/Universidad/"Estructura De Datos" ~/Documentos/Universidad/"Programacion II"
+    2  cd ~/Documentos/Universidad/
+    3  sudo apt update && sudo apt upgrate -y
+    4  sudo apt install git -y
+    5  git config --global user.name "Jorge Rivero Justiniano"
+    6  git config --global user.email "jorge.rivero@ucb.edu.bo"
+    7  git config --global user.name
+    8  git config --global user.email
+    9  sudo snap install code --classic
+   10  sudo apt install default-jdk -y
+   11  java -v
+   12  java -version
+   13  code --install-extention vscjava.vscode-java-pack
+   14  code --install-extension vscjava.vscode-java-pack
+   15  sudo apt install gh -y
+   16  gh auth login 
+   17  code .
+   18  cd Estrucutra de datos
+   19  cd ~/Documentos/Universidad/"Estrucura De Datos"
+   20  cd ~/"Estructura De Datos"
+   21  cd "Estructura De Datos"/
+   22  touch HolaMUndo.java
+   23  code HolaMUndo.java
+   24  ls
+   25  mv HolaMUndo.java HolaMundo.java
+   26  rm HolaMUndo.java
+   27  code HolaMundo.java
+   28  sudo apt update && sudo apt update install -y gnome-shell-extension-manager
+   29  sudo apt update && sudo apt install -y gnome-shell-extension-manager
+   30  code .
+   31  code ./Documentos/Universidad/
+   32  clear
+   33  cls
+   34  clear
+   35  cd ..
+   36  cd "Programacion II"/
+   37  cd ..
+   38  cd "Estructura De Datos"/
+   39  rm HolaMundo.java
+   40  mkdir "CLase4"
+   41  mv CLase4/ Clase4
+   42  mv Clase4/ clase4
+   43  cd clase4/
+   44  touch node.java
+   45  touch main.java
+   46  touch linkedlist.java
+   47  code node
+   48  code node.java
+   49  mv node.java Node.java
+   50  rm node.java
+   51  code Node.java
+   52  mv main.java Main.java
+   53  mv linkedlist.java LinkedList.java
+   54  code LinkedList.java
+   55  top
+   56  clear
+   57  btop
+   58  top
+   59  ls
+   60  cd Documentos/
+   61  ls
+   62  cd ..
+   63  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   64  top
+   65  clear
+   66  sudo apt install btop
+   67  apt update 
+   68  sudo shutdown now
+   69  clear
+   70  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   71  firefox
+   72  firefox &
+   73  clear
+   74  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   75  sudo apt update && sudo apt install --reinstall gnome-shell-extension-ubuntu-dock
+   76  dcof reset -f /org/gnome/
+   77  dconf reset -f /org/gnome/
+   78  apt list --install
+   79  apt list --installed
+   80  grep "install" /var/log/dpkg.log
+   81  clear
+   82  sudo apt install tree
+   83  cd ./Documentos/Universidad/Programacion\ II/
+   84  mkdir bitacora-termial
+   85  cd bitacora-terminal
+   86  mv bitacora-termial bitacora-terminal
+   87  cd bitacora-terminal
+   88  ls
+   89  mkdir comandos
+   90  ls
+   91  mkdir evidencias
+   92  mkdir investigaciones
+   93  ls
+   94  pwd
+   95  touch COMANDOS.md
+   96  ls
+   97  rm COMANDOS.md
+   98  ls
+   99  cd comandos/
+  100  touch COMANDOS.md
+  101  ls
+  102  cd ..
+  103  cd evidencias/
+  104  touch sesion-casa.txt
+  105  history > sesion-casa.txt
