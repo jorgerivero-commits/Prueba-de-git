@@ -103,3 +103,35 @@
   103  cd evidencias/
   104  touch sesion-casa.txt
   105  history > sesion-casa.txt
+  106  ls
+  107  cd ..
+  108  git init 
+  109  git add.
+  110  git add .
+  111  git commit -m "Agregar estrutura de Bitacora Terminal"
+  112  git Branch -M main
+  113  git branch -M main
+  114  git remote add origin https://github.com/jorgerivero-commits/Prueba-de-git
+  115  git push origin main --allow-unrealted-histories
+  116  git push origin main --allow-unrelated-histories
+  117  git pull origin main --allow-unrelated-histories
+  118  git config pull.rebase false
+  119  git pull origin main --allow-unrelated-histories
+  120  git push -u origin main
+  121  cd investigaciones/
+  122  pwd
+  123  ls
+  124  touch rutas-y-directorios.md
+  125  ls
+  126  nano rutas-y-directorios.md 
+  127  cat rutas-y-directorios.md 
+  128  git add .
+  129  git commit -m "Investigacion Tarea 2"
+  130  git push 
+  131  clear
+  132  cd ..
+  133  cd comandos/
+  134  nano COMANDOS.md 
+  135  cd ..
+  136  cd evidencias/
+  137  history > sesion-casa.txt 
