@@ -1,3 +1,4 @@
+--- CLASE 2 ---
 ¿Qué guardan los directorios /home, /etc, /var y /tmp en Linux? (pueden explorarlos con ls y cat en la VM)
 /home guarda los directorios personales que tenga el usuario.
 /etc guarda los archivos de aplicaciones instaladas y del sistema
@@ -27,3 +28,5 @@ lo mismo, si no tiene / o ~ entonces es relativa
 cd . No hace mucho, si lo dejas asi y das enter, no pasa nada, pero si haces algo como cd ./Directorio... te moveras a ese directorio
 cd .. Te devuelve al directorio padre por ejemplo: /Directorio1/Directorio2/Aum.txt
 si usas cd .. estando en Aum.txt volveras Directorio2 quedando algo asi /Directorio1/Directorio2/ y si usas cd .. nuevamente volveras al anterio
+
+
