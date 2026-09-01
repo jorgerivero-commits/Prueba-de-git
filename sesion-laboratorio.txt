@@ -1,0 +1,468 @@
+    1  mkdir -p ~/Documentos/Universidad/"Estructura De Datos" ~/Documentos/Universidad/"Programacion II"
+    2  cd ~/Documentos/Universidad/
+    3  sudo apt update && sudo apt upgrate -y
+    4  sudo apt install git -y
+    5  git config --global user.name "Jorge Rivero Justiniano"
+    6  git config --global user.email "jorge.rivero@ucb.edu.bo"
+    7  git config --global user.name
+    8  git config --global user.email
+    9  sudo snap install code --classic
+   10  sudo apt install default-jdk -y
+   11  java -v
+   12  java -version
+   13  code --install-extention vscjava.vscode-java-pack
+   14  code --install-extension vscjava.vscode-java-pack
+   15  sudo apt install gh -y
+   16  gh auth login 
+   17  code .
+   18  cd Estrucutra de datos
+   19  cd ~/Documentos/Universidad/"Estrucura De Datos"
+   20  cd ~/"Estructura De Datos"
+   21  cd "Estructura De Datos"/
+   22  touch HolaMUndo.java
+   23  code HolaMUndo.java
+   24  ls
+   25  mv HolaMUndo.java HolaMundo.java
+   26  rm HolaMUndo.java
+   27  code HolaMundo.java
+   28  sudo apt update && sudo apt update install -y gnome-shell-extension-manager
+   29  sudo apt update && sudo apt install -y gnome-shell-extension-manager
+   30  code .
+   31  code ./Documentos/Universidad/
+   32  clear
+   33  cls
+   34  clear
+   35  cd ..
+   36  cd "Programacion II"/
+   37  cd ..
+   38  cd "Estructura De Datos"/
+   39  rm HolaMundo.java
+   40  mkdir "CLase4"
+   41  mv CLase4/ Clase4
+   42  mv Clase4/ clase4
+   43  cd clase4/
+   44  touch node.java
+   45  touch main.java
+   46  touch linkedlist.java
+   47  code node
+   48  code node.java
+   49  mv node.java Node.java
+   50  rm node.java
+   51  code Node.java
+   52  mv main.java Main.java
+   53  mv linkedlist.java LinkedList.java
+   54  code LinkedList.java
+   55  top
+   56  clear
+   57  btop
+   58  top
+   59  ls
+   60  cd Documentos/
+   61  ls
+   62  cd ..
+   63  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   64  top
+   65  clear
+   66  sudo apt install btop
+   67  apt update 
+   68  sudo shutdown now
+   69  clear
+   70  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   71  firefox
+   72  firefox &
+   73  clear
+   74  code ./Documentos/Universidad/Estructura\ De\ Datos/
+   75  sudo apt update && sudo apt install --reinstall gnome-shell-extension-ubuntu-dock
+   76  dcof reset -f /org/gnome/
+   77  dconf reset -f /org/gnome/
+   78  cd ..
+   79  cd comandos/
+   80  cd ..
+   81  cd evidencias/
+   82  cd .
+   83  cd ..
+   84  tree bitacora-terminal/
+   85  mad mkdir
+   86  man mkdir
+   87  apt list --install
+   88  apt list --installed
+   89  grep "install" /var/log/dpkg.log
+   90  clear
+   91  sudo apt install tree
+   92  cd ./Documentos/Universidad/Programacion\ II/
+   93  mkdir bitacora-termial
+   94  cd bitacora-terminal
+   95  mv bitacora-termial bitacora-terminal
+   96  cd bitacora-terminal
+   97  ls
+   98  mkdir comandos
+   99  ls
+  100  mkdir evidencias
+  101  mkdir investigaciones
+  102  ls
+  103  pwd
+  104  touch COMANDOS.md
+  105  ls
+  106  rm COMANDOS.md
+  107  ls
+  108  cd comandos/
+  109  touch COMANDOS.md
+  110  ls
+  111  cd ..
+  112  cd evidencias/
+  113  touch sesion-casa.txt
+  114  history > sesion-casa.txt
+  115  ls
+  116  cd ..
+  117  git init 
+  118  git add.
+  119  git add .
+  120  git commit -m "Agregar estrutura de Bitacora Terminal"
+  121  git Branch -M main
+  122  git branch -M main
+  123  git remote add origin https://github.com/jorgerivero-commits/Prueba-de-git
+  124  git push origin main --allow-unrealted-histories
+  125  git push origin main --allow-unrelated-histories
+  126  git pull origin main --allow-unrelated-histories
+  127  git config pull.rebase false
+  128  git pull origin main --allow-unrelated-histories
+  129  git push -u origin main
+  130  cd investigaciones/
+  131  pwd
+  132  ls
+  133  touch rutas-y-directorios.md
+  134  ls
+  135  nano rutas-y-directorios.md 
+  136  cat rutas-y-directorios.md 
+  137  git add .
+  138  git commit -m "Investigacion Tarea 2"
+  139  git push 
+  140  clear
+  141  cd ..
+  142  cd comandos/
+  143  nano COMANDOS.md 
+  144  cd ..
+  145  cd evidencias/
+  146  history > sesion-casa.txt 
+  147  git add ..
+  148  git commit -m "Comandos de clase 2 agregados"
+  149  git push
+  150  cd ..
+  151  code ./Documentos/Universidad/Programacion\ II/
+  152  clear
+  153  ls
+  154  cd Documentos/Universidad/Programacion\ II/
+  155  ls
+  156  la -la
+  157  cd bitacora-terminal/
+  158  ls
+  159  ls -la
+  160  pwd
+  161  ls
+  162  ls > myoutput.md
+  163  ls
+  164  cat myoutput.md 
+  165  tree
+  166  rm myoutput.md 
+  167  ls
+  168  tree
+  169  ls > myoutput.md
+  170  ls
+  171  cat > myoutput.md 
+  172  ls
+  173  rm myoutput.md 
+  174  tree
+  175  ls
+  176  ls > my.txt
+  177  cat my.txt 
+  178  echo "nuevo msj" >> my.txt
+  179  cat my.txt 
+  180  echo "nuevo msj" > my.txt 
+  181  cat my.txt 
+  182  wc -l my.txt 
+  183  ls > my.txt 
+  184  wc -l my.txt 
+  185  cat my.txt 
+  186  wc -l my.txt > count_lines
+  187  cat count_lines 
+  188  wc -l <  my.txt 
+  189  wc -l <  my.txt > count_lines 
+  190  cat count_lines 
+  191  wc -l <  my.txt >> count_lines 
+  192  cat count_lines 
+  193  ls | -3 count_lines 
+  194  ls | head -3 
+  195  ls | hed -3 | tail -2
+  196  ls | head -3 | tail -2
+  197  tail 2
+  198  ls | tail 2
+  199  ls | tail -5
+  200  cd ..
+  201  code ./Documentos/Universidad/Estructura\ De\ Datos/
+  202  top
+  203  mkdir lista_circular
+  204  touch Main.java
+  205  rm Main.java
+  206  cd lista_circular/
+  207  touch Main.java
+  208  touch Node.java
+  209  touh Linked_list
+  210  touch Linked_List
+  211  rm Linked_List 
+  212  touch Linked_List.java
+  213  clear
+  214  cd ..
+  215  cd lista_circular/
+  216  code ./Documentos/Universidad/Estructura\ De\ Datos/
+  217  clear
+  218  mkdir Reto
+  219  cd Reto
+  220  touch Node.java
+  221  touch Main.java
+  222  touch List.java
+  223  rm -r Reto
+  224  cd ..
+  225  rm -r Reto
+  226  mkdir "Integracion Numerica"
+  227  cd Integracion\ Numerica/
+  228  cd ..
+  229  mv Integracion Numerica Clase 28
+  230  mv "Integracion Numerica" " Clase 28"
+  231  cd Clase 28
+  232  rm "Clase 28"
+  233  rm Clase 28
+  234  mkdir clase_8
+  235  cd clase_8/
+  236  touch Integracion_numerica.java
+  237  clear
+  238  cd Documentos/Universidad/
+  239  ls
+  240  mkdir "Analisis Numerico"
+  241  ls
+  242  cd Analisis\ Numerico/
+  243  cd ..
+  244  code ./Documentos/Universidad/Analisis\ Numerico/
+  245  cd ./Archivos
+  246  sudo apt install onlyoffice-desktopeditors
+  247  cd ..
+  248  cd ...
+  249  cd ..
+  250  cd Documentos/Universidad/
+  251  ls
+  252  cd cuarto\ semestre/
+  253  ls
+  254  Programacion\ II/
+  255  cd Programacion\ II/
+  256  ls
+  257  cd bitacora-terminal/
+  258  pwd
+  259  ls
+  260  rm count_lines 
+  261  ls
+  262  rm my.txt 
+  263  ls
+  264  cd comandos/
+  265  ls
+  266  nano COMANDOS.md 
+  267  git add . 
+  268  git commint -m "Actualizacion de comandos de clases"
+  269  git commit -m "Actualizacion de comandos de clases"
+  270  git push
+  271  ls
+  272  cd ..
+  273  ls
+  274  cd investigaciones/
+  275  ls
+  276  nano rutas-y-directorios.md 
+  277  git add .
+  278  git restore --staged . 
+  279  cd ..
+  280  cd evidencias/
+  281  ls
+  282  mv sesion-casa.txt sesion-clase02.txt 
+  283  ls
+  284  touch sesion-clase03.txt
+  285  ls
+  286  nano sesion-clase02.txt
+  287  cd ..
+  288  cd investigaciones/
+  289  ls
+  290  touch procesar-texto.md
+  291  ls
+  292  nano rutas-y-directorios.md 
+  293  nano procesar-texto.md 
+  294  cd ..
+  295  cd investigaciones/
+  296  ls
+  297  git add .
+  298  git commit -m "Investigaciones de Clase 2 Realizadas" 
+  299  git push
+  300  cd ..
+  301  history 
+  302  history > evidencias/sesion-clase03.txt
+  303  cd evidencias/
+  304  ls
+  305  git add .
+  306  git commit -m "Creacion de clase03"
+  307  git push
+  308  cd ..
+  309  history > evidencias/sesion-clase03.txt
+  310  cd ..
+  311  cd .. 
+  312  cd ..
+  313  code ./Documentos/Universidad/cuarto\ semestre/Estructura\ De\ Datos/
+  314  cd practico/
+  315  mkdir Clases
+  316  mv lista_simple Clases
+  317  mv listacircular Clases
+  318  mv listadoble Clases
+  319  mkdir practico
+  320  cd practico/
+  321  mkdir listaSimple
+  322  ls
+  323  cd listaSimple/
+  324  touch ejercicio1.java
+  325  cd ..
+  326  cd listaSimple/
+  327  mv ejercicio1.java ListaSimple
+  328  mv ListaSimple ListaSimple.java
+  329  rm ejercicio1.java 
+  330  touch ListaSimple.java
+  331  code ./Documentos/Universidad/cuarto\ semestre/Estructura\ De\ Datos/
+  332  cd Documentos/
+  333  ls
+  334  Universidad/
+  335  cd Universidad/
+  336  ls
+  337  cd ..
+  338  code ./Documentos/Universidad/cuarto\ semestre/Estructura\ De\ Datos/
+  339  cd practico/
+  340  cd listaSimple/
+  341  touch ListaSimple3.java
+  342  git clone https://github.com/gonzalocalle-prog/SIS-113.git
+  343  cd SIS-113/
+  344  bash setup.sh
+  345  cd ..
+  346  cd SIS-113/laboratorio/
+  347  bash setup.sh
+  348  tree
+  349  ls -R
+  350  ls -la proyecto-sensores/src
+  351  clear
+  352  tree
+  353  ls -la proyecto-sensores/datos
+  354  ls -la proyecto-sensores/docs
+  355  ls -la proyecto-sensores/src
+  356  car proyecto-sensores/datos/sensor-01.log
+  357  cat proyecto-sensores/datos/sensor-01.log
+  358  clear
+  359  tree
+  360  ls -la proyecto-sensores/src
+  361  find proyecto-sensores/ -nanme "tmp"
+  362  find proyecto-sensores -name "*.tmp"
+  363  find proyecto-sensores -name "*~"
+  364  find proyecto-sensores -name "*.tmp" -exec rm{} +
+  365  rm proyecto-sensores -name "*.tmp"
+  366  find proyecto-sensores -name "*.tmp" rm
+  367  find proyecto-sensores -name rm "*.tmp"
+  368  find proyecto-sensores -name "*.tmp" -delete
+  369  ls proyecto-sensores/
+  370  ls proyecto-sensores/datos/
+  371  ls proyecto-sensores/docs/
+  372  find proyecto-sensores -name "*~" -delete
+  373  ls proyecto-sensores/docs
+  374  proyecto-sensores/src/analizar.sh
+  375  ls -la proyecto-sensores/src
+  376  chmod 672 analizar.sh
+  377  chmod 672 proyecto-sensores/src
+  378  ls -ls proyecto-sensores/src
+  379  chmod 755 proyecto-sensores/src
+  380  ls -la proyecto-sensores/src
+  381  chmod 772 proyecto-sensores/src 
+  382  ls -la proyecto-sensores/src
+  383  chomd 733 proyecto-sensores/src
+  384  chmod 755 proyecto-sensores/src
+  385  ls -la proyecto-sensores/src
+  386  chmod 744 proyecto-sensores/src/analizar.sh 
+  387  proyecto-sensores/src/analizar.sh 
+  388  tree
+  389  cat proyecto-sensores/datos/sensor-01.log
+  390  cat proyecto-sensores/datos/sensor-02.log
+  391  cat proyecto-sensores/datos/sensor-03.log
+  392  find proyecto-sensores -name "*.log" | xargs grep "ERROR" > proyecto-sensores/reporte-errores.txt
+  393  wc -l proyecto-sensores/reporte-errores.txt~
+  394  cat proyecto-sensores/reporte-errores.txt 
+  395  wc -l proyecto-sensores/reporte-errores.txt 
+  396  mkdir respaldos
+  397  tar -czf respaldos/proyecto-$(date +%F).tar.gz proyecto-sensores
+  398  tar -tzf respaldos/proyecto-*.tar.gz
+  399  find proyecto-sensores -type f | wc -l
+  400  touch respaldos/RESPALDO.md
+  401  ls respaldos/
+  402  nano respaldos/RESPALDO.md 
+  403  cat respaldos/RESPALDO.md 
+  404  bash verificDDDDar.sh
+  405  bash verificar.sh
+  406  cat << 'EOF' > RESPALDO.md
+1. find proyecto-sensores -name "*.tmp" -delete
+Limpieza de archivos temporales tmp del proyecto.
+2. find proyecto-sensores -name "*~" -delete
+Limpieza de archivos temporales de respaldo.
+3. chmod 755 proyecto-sensores/src/analizar.sh
+Asignacion de permisos de ejecucion al script analizar.sh.
+4. find proyecto-sensores -name "*.log" | xargs grep "ERROR" > proyecto-sensores/reporte-errores.txt
+Construccion del reporte de errores con tuberia filtrando logs.
+5. wc -l proyecto-sensores/reporte-errores.txt
+Verificacion de lineas generadas en el reporte de errores.
+6. tar -czf respaldos/proyecto-$(date +%F).tar.gz proyecto-sensores
+Creacion del archivo comprimido tar gz de respaldo con fecha.
+7. tar -tzf respaldos/proyecto-*.tar.gz
+Verificacion del contenido empaquetado dentro del respaldo tar.
+EOF
+
+  407  rm RESPALDO.md 
+  408  nano respaldos/RESPALDO.md 
+  409  rm respaldos/RESPALDO.md 
+  410  touch respaldos/RESPALDO.md
+  411  nano respaldos/RESPALDO.md 
+  412  bash verificar.sh
+  413  rm respaldos/RESPALDO.md 
+  414  touch respaldos/RESPALDO.md
+  415  cat << 'EOF' > RESPALDO.md
+1. find proyecto-sensores -name "*.tmp" -delete
+Limpieza de archivos temporales tmp del proyecto.
+2. find proyecto-sensores -name "*~" -delete
+Limpieza de archivos temporales de respaldo.
+3. chmod 755 proyecto-sensores/src/analizar.sh
+Asignacion de permisos de ejecucion al script analizar.sh.
+4. find proyecto-sensores -name "*.log" | xargs grep "ERROR" > proyecto-sensores/reporte-errores.txt
+Construccion del reporte de errores con tuberia filtrando logs.
+5. wc -l proyecto-sensores/reporte-errores.txt
+Verificacion de lineas generadas en el reporte de errores.
+6. tar -czf respaldos/proyecto-$(date +%F).tar.gz proyecto-sensores
+Creacion del archivo comprimido tar gz de respaldo con fecha.
+7. tar -tzf respaldos/proyecto-*.tar.gz
+Verificacion del contenido empaquetado dentro del respaldo tar.
+EOF
+
+  416  cat << 'EOF' > RESPALDO.md
+1. find proyecto-sensores -name "*.tmp" -delete
+Limpieza de archivos temporales tmp del proyecto.
+2. find proyecto-sensores -name "*~" -delete
+Limpieza de archivos temporales de respaldo.
+3. chmod 755 proyecto-sensores/src/analizar.sh
+Asignacion de permisos de ejecucion al script analizar.sh.
+4. find proyecto-sensores -name "*.log" | xargs grep "ERROR" > proyecto-sensores/reporte-errores.txt
+Construccion del reporte de errores con tuberia filtrando logs.
+5. wc -l proyecto-sensores/reporte-errores.txt
+Verificacion de lineas generadas en el reporte de errores.
+6. tar -czf respaldos/proyecto-$(date +%F).tar.gz proyecto-sensores
+Creacion del archivo comprimido tar gz de respaldo con fecha.
+7. tar -tzf respaldos/proyecto-*.tar.gz
+Verificacion del contenido empaquetado dentro del respaldo tar.
+EOF
+
+  417  cat respaldos/RESPALDO.md 
+  418  nano respaldos/RESPALDO.md 
+  419  bash verificar.sh
+  420  history > sesion-laboratorio.txt
