@@ -44,6 +44,8 @@ public class Sentinel {
         double load1 = 0;
         int procs = 0;
         String topProc = "";
+        String hostname = "";
+
         //
         // The ones for the SUMMARY (accumulate over the whole stream):
         int read = 0;
@@ -53,6 +55,7 @@ public class Sentinel {
         int maxPct = -1;
         long tsMaxPct = 0;
         double maxLoad = 0;
+       
         //
         // For "most frequent process": two PARALLEL arrays that must always move
         // together. If someone touches one and not the other, the summary lies.
@@ -66,7 +69,10 @@ public class Sentinel {
 
         Scanner input = new Scanner(System.in);
         while (input.hasNextLine()) {
-            String line = input.nextLine();
+            String line = input.nextLine().trim();
+            if(line == ""){
+              continue;
+            }
             read++;
 
             // PAIN 3 — the JSON contract taken apart by hand with indexOf, substring
@@ -93,8 +99,12 @@ public class Sentinel {
                 procs = Integer.parseInt(line.substring(i + 8, line.indexOf(",", i)).trim());
 
                 i = line.indexOf("\"top_proc\":");
-                topProc = line.substring(i + 11, line.indexOf("}", i)).trim();
-                topProc = topProc.substring(1, topProc.length() - 1); // strip the quotes
+                topProc = line.substring(i + 11, line.indexOf(",", i)).trim();
+                
+                i = line.indexOf("\"hostname\":");
+                  hostname = line.substring(i + 11, line.indexOf("}", i)).trim();
+                  //hostname = hostname.substring(1, hostname.length() - 1);
+
             } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
                 invalid++;
                 System.out.println("invalid line: " + line);
@@ -116,13 +126,13 @@ public class Sentinel {
             String time = timeFormat.format(
                     LocalTime.ofInstant(Instant.ofEpochSecond(ts), ZoneId.systemDefault()));
 
-            if (pct >= threshold) {
+            if (pct >= threshold){
                 alerts++;
-                System.out.printf("\033[31m[ALERT ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %d  top %s%n",
-                        time, pct, cpuPct, load1, procs, topProc);
+                System.out.printf("\033[31m[ ALERT ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %s  top %10s hostname %s%n",
+                        time, pct, cpuPct, load1, procs, topProc, hostname);
             } else {
-                System.out.printf("\033[32m[  ok  ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %d  top %s%n",
-                        time, pct, cpuPct, load1, procs, topProc);
+                System.out.printf("\033[32m[  ok  ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %s  top %10s hostname %s%n",
+                        time, pct, cpuPct, load1, procs, topProc, hostname);
             }
 
             // PAIN 5 — the bookkeeping for the summary is done by hand, right here,
