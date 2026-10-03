@@ -27,6 +27,7 @@ public class Sentinel {
 
         int threshold = 80;
         if (args.length > 0) {
+
             threshold = Integer.parseInt(args[0]);
         }
         // PAIN 1 — nothing stops threshold = 300 or threshold = -5. It is an int
@@ -104,8 +105,14 @@ public class Sentinel {
             // program dies!) or memUsedKb can be larger than the total (107 % of
             // memory, and nobody complains). The data came in without anyone
             // asking whether it made sense.
-            int pct = (int) (100 * memUsedKb / memTotalKb);
 
+            if(memTotalKb <= 0 || memUsedKb <= 0 || memUsedKb > memTotalKb){
+              invalid++;
+              System.out.println("Invalid Data: memTotalKb: " + memTotalKb);
+              System.out.println("Invalid Data: memUsedKb: " + memUsedKb);
+              continue;
+            }
+            int pct = (int) ((100L * memUsedKb)  / memTotalKb);
             String time = timeFormat.format(
                     LocalTime.ofInstant(Instant.ofEpochSecond(ts), ZoneId.systemDefault()));
 
