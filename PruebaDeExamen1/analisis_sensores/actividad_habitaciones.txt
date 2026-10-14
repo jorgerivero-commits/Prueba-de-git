@@ -1,0 +1,4 @@
+     12 COCINA
+     14 SALA
+      8 BAÑO
+      8 DORMITORIO
