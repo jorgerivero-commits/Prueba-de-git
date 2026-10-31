@@ -28,9 +28,16 @@ class Pass {
 }
 
 /** "Popcorn also has a price, so let's reuse Pass." */
-class Popcorn extends Pass {
+class Popcorn  {
+    private final String size;
+    private final double price;
 
     Popcorn(String size, double price) {
-        super(size + " popcorn", "none", price);
+        this.size = size;
+        this.price = price;
+    }
+
+    String describe(){
+        return "Size " + size + " | Price " + price;
     }
 }

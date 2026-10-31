@@ -21,7 +21,8 @@ class Snack {
 
 class Combo extends Snack {
 
-    double getprice() {
+    @Override 
+    double getPrice() {
         return 25;
     }
 }

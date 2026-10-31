@@ -28,6 +28,7 @@ class Premiere extends Movie {
 
     Premiere(String title, String guest) {
         this.guest = guest;
+        super(title);
     }
 
     String describe() {

@@ -26,7 +26,14 @@ abstract class Screening {
 
 class MorningScreening extends Screening {
 
+    @Override 
+    int discountPercent(){
+        return 20;
+    }
+
     MorningScreening(double basePrice) {
         super(basePrice);
     }
+    
+    
 }

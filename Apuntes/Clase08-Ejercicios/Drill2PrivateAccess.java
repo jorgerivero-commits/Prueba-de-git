@@ -22,6 +22,9 @@ class Seat {
     String getCode() {
         return code;
     }
+    double getPrice(){
+        return price;
+    }
 }
 
 class VipSeat extends Seat {
@@ -31,6 +34,6 @@ class VipSeat extends Seat {
     }
 
     double total() {
-        return price * 1.5;
+        return getPrice() * 1.5;
     }
 }
