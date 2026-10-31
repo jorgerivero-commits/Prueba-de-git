@@ -85,3 +85,7 @@ java -cp oop/out Main 80 < ../phase1-bash/samples/muestra-rota.txt
 - [Clase 4 — Bash: el colector](../Apuntes/Clase04-Guia.md)
 - [Clase 5 — Java procedural y sus dolores](../Apuntes/Clase05-Guia.md)
 - [Clase 6 — Abstracción y encapsulamiento](../Apuntes/Clase06-Guia.md)
+<<<<<<< HEAD
+=======
+- [Clase 7 — Colecciones y composición](../Apuntes/Clase07-Guia.md)
+>>>>>>> upstream/main

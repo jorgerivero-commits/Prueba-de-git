@@ -27,7 +27,10 @@ public class Sentinel {
 
         int threshold = 80;
         if (args.length > 0) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
             threshold = Integer.parseInt(args[0]);
         }
         // PAIN 1 — nothing stops threshold = 300 or threshold = -5. It is an int
@@ -44,8 +47,11 @@ public class Sentinel {
         double load1 = 0;
         int procs = 0;
         String topProc = "";
+<<<<<<< HEAD
         String hostname = "";
 
+=======
+>>>>>>> upstream/main
         //
         // The ones for the SUMMARY (accumulate over the whole stream):
         int read = 0;
@@ -55,7 +61,10 @@ public class Sentinel {
         int maxPct = -1;
         long tsMaxPct = 0;
         double maxLoad = 0;
+<<<<<<< HEAD
        
+=======
+>>>>>>> upstream/main
         //
         // For "most frequent process": two PARALLEL arrays that must always move
         // together. If someone touches one and not the other, the summary lies.
@@ -69,10 +78,14 @@ public class Sentinel {
 
         Scanner input = new Scanner(System.in);
         while (input.hasNextLine()) {
+<<<<<<< HEAD
             String line = input.nextLine().trim();
             if(line == ""){
               continue;
             }
+=======
+            String line = input.nextLine();
+>>>>>>> upstream/main
             read++;
 
             // PAIN 3 — the JSON contract taken apart by hand with indexOf, substring
@@ -99,12 +112,17 @@ public class Sentinel {
                 procs = Integer.parseInt(line.substring(i + 8, line.indexOf(",", i)).trim());
 
                 i = line.indexOf("\"top_proc\":");
+<<<<<<< HEAD
                 topProc = line.substring(i + 11, line.indexOf(",", i)).trim();
                 
                 i = line.indexOf("\"hostname\":");
                   hostname = line.substring(i + 11, line.indexOf("}", i)).trim();
                   //hostname = hostname.substring(1, hostname.length() - 1);
 
+=======
+                topProc = line.substring(i + 11, line.indexOf("}", i)).trim();
+                topProc = topProc.substring(1, topProc.length() - 1); // strip the quotes
+>>>>>>> upstream/main
             } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
                 invalid++;
                 System.out.println("invalid line: " + line);
@@ -115,6 +133,7 @@ public class Sentinel {
             // program dies!) or memUsedKb can be larger than the total (107 % of
             // memory, and nobody complains). The data came in without anyone
             // asking whether it made sense.
+<<<<<<< HEAD
 
             if(memTotalKb <= 0 || memUsedKb <= 0 || memUsedKb > memTotalKb){
               invalid++;
@@ -133,6 +152,20 @@ public class Sentinel {
             } else {
                 System.out.printf("\033[32m[  ok  ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %s  top %10s hostname %s%n",
                         time, pct, cpuPct, load1, procs, topProc, hostname);
+=======
+            int pct = (int) (100 * memUsedKb / memTotalKb);
+
+            String time = timeFormat.format(
+                    LocalTime.ofInstant(Instant.ofEpochSecond(ts), ZoneId.systemDefault()));
+
+            if (pct >= threshold) {
+                alerts++;
+                System.out.printf("\033[31m[ALERT ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %d  top %s%n",
+                        time, pct, cpuPct, load1, procs, topProc);
+            } else {
+                System.out.printf("\033[32m[  ok  ]\033[0m %s  mem %3d%%  cpu %5.1f%%  load %.2f  procs %d  top %s%n",
+                        time, pct, cpuPct, load1, procs, topProc);
+>>>>>>> upstream/main
             }
 
             // PAIN 5 — the bookkeeping for the summary is done by hand, right here,
